@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a poll</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDQ0NDg8NDg8NDQ0ODw0PDQ8PDw0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIDB//EACgQAQABAwIFBAMBAQAAAAAAAAABEVFhIZEScaGx8DFBgcEC0eHxE//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD2xAAEAKpUACqAAICoqAAAAAAAAAogCgApVAGoaYhqAaCFBEaSYBAAQJAEABAAQAEAAAAAAAAAAAAABQAAAElQVqGYWAbj9qkNQAkqgIiyyBISAyCAAgBUQFEAUQBQQFEAUEBRFAABQAFhAFlFQBqGYusA3DUSxEqDdUlCZAllZQCRJUGUEAEJkAAAAAAAAAAFQUEABSBYAAAFAECQFhMANKyoNfsZj2UCS5+yQSVJAYlBJAQAAAAAFQBUAFEAUAAABYRYBQAWFmD8VkGQoAkphrKAR2Psp7XX6Bb4I+kiFuBZQABQckEkCUAAAAFBFAACAAAFQBQAUhFgFABqGpYbgGBQEMgAqLFwFslFAABYABxqggAUweegHnqHnobgBtubAVUrnuAAAAAAAKgCgA0ACtQxDcAgH0CGFygGFMGAUABUUAAHAPRKgfJ89zTOxTIHz3KZKRfoaZ2A0zsmmV0yaZA0yfJp5BQAKnQFEXyoAKCCgEAAqpCwCwqKAfYf4AmVwAZDJFwURQFRQAAcJrCTOF1hK4gDTJpnY0tO5pkDTOyaZ2XTOxpnYE0yumdjS87f0pF+gFMpReHlulKAsSFblLAeUXlslSlv6CwqVWAA+CvMFCAFVnqsApAAoefABJgyAKmFABQAABaIDhrF0riGtYvDNeWwFYt1NM7wVi3U0zuBpk0vOyaZXS/QCkX6FMwUzHU4eW4HDP8AmqRJMLxeSBXGxw21NORTyAK31KW/pW+/utLAVuFfJAKcl1v1Tz0UD56qixgDosIvPYFA8kF8+D7PvsV/gH0ZKe26doBYABVRQFRQAAcNYvCcXLZdYvCcXLYErFusmmd1rFuqaZ6SBSLzslIv0laRfocOY6gcOY3OGbfacM4n5gpMe0gVoteRxT/upWLbaAacikx+4KRfcpMfsCtymd9Ct420IiL7guseaFcQRE+3SV1z8wCVi3Vaxbqa26Qa26AsYg5pznqacwWMbrHknPY6R3A8mV7e2U7d17+0WA8lc7JjeVzsCYup3kwAsIAqooAAAAONZOLlPwgBWLdSkZQBeGLxtJ/zkAZ/L8aESALxcp+CsWpyAFj8a+k1TWMABxXj6NMwALH42mFj8J8kAXgnyUn8byAGmZ6LGNAA6rOfUAXuY9/eQA7QudgAAAFAUAAAAAH/2Q==);">
+  <div class="container">
+    <h2 class="mt-4"><b>Give options based on the given question....</b</h2>
+    <h2 class="mt-4">Which car is better 🚘...</h2>
+    <small class="text text-muted">
+      There can only be four option for the poll.
+    </small>
+    <% if(error == true) { %>
+      <div class="alert alert-danger mt-4" style="margin-bottom: -10px;" role="alert">
+       <%= message %>
+      </div>
+    <% } %> 
+
+    <form action="/" method="POST">
+      <div class="form-group">
+        <br>
+        <br>
+        <input type="text" name="first" class="form-control" placeholder="first option">
+        <br>
+        <input type="text" name="second" class="form-control" placeholder="second option">
+        <br>
+        <input type="text" name="third" class="form-control" placeholder="third option">
+        <br>
+        <input type="text" name="fourth" class="form-control" placeholder="fourth option">
+        <br>
+        <button type="submit" class="btn btn-info">Make a poll!</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
